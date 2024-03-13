@@ -16,4 +16,13 @@
 // - Ricordiamoci di inizializzare la variabile di contatore prima dell'inizio del ciclo while
 // - Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione di uscita, all'interno ciclo while
 
+// data un'array 
 const list = ['Latte','Cacao','Insalata','Carote','Pomodori','Piatti pronti'];
+// creo la costante collegata alla UL
+const userList = document.querySelector("#list")
+// creo un ciclo for
+for (let i = 0; i < list.length; i++){
+    const thisList = list[i];
+    // stampo il risultato sulla pagina in un LI
+    userList.innerHTML += `<li>${thisList}</li>`
+}
